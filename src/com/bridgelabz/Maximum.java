@@ -25,11 +25,24 @@ public class Maximum {
         return max;
     }
 
+    public static String maximumString(String string1, String string2, String string3) {
+        String max = string1;
+        if (string2.compareTo(max) > 0) {
+            max = string2;
+        }
+        if (string3.compareTo(max) > 0) {
+            max = string3;
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
         Integer resultInt =  maximumInteger(67, 76, 24);
         Float resultFloat = maximumFloat((float)23.3, (float) 45.7, (float) 28.9);
+        String resultString = maximumString("Vicky", "Raja", "Deep");
         System.out.println("The Maximum Integer Number Is : " +resultInt);
         System.out.println("The Maximum Float Number Is : " +resultFloat);
+        System.out.println("The Maximum String Is : " +resultString);
     }
 }
 

@@ -21,8 +21,8 @@ public class Maximum {
         int number2 = scanner.nextInt();
         System.out.println("Enter Third Number : ");
         int number3 = scanner.nextInt();
-        //Integer result =  maximumInt(10, 5, 8);
-        System.out.println("The Maximum Integer Is : " +maximumInt(number1, number2, number3));
+
+        System.out.println(" The Maximum Integer Is : " +maximumInt(number1, number2, number3));
     }
 }
 

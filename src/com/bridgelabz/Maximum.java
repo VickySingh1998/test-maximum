@@ -42,7 +42,7 @@ public class Maximum {
         String resultString = maximumString("Vicky", "Raja", "Deep");
         System.out.println("The Maximum Integer Number Is : " +resultInt);
         System.out.println("The Maximum Float Number Is : " +resultFloat);
-        System.out.println("The Maximum String Name Is : " +resultString);
+        System.out.println("The Maximum String Name Name Is : " +resultString);
     }
 }
 

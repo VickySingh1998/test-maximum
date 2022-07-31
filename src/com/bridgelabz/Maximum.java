@@ -1,28 +1,22 @@
 package com.bridgelabz;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Maximum {
-    public static Integer maximumInteger(Integer number1, Integer number2, Integer number3) {
-        Integer max = number1;
-        if (number2.compareTo(max) > 0) {
-            max = number2;
+    public static Integer maximumInteger(Integer a, Integer b, Integer c) {
+        Integer max = a;
+        if (b.compareTo(max) > 0) {
+            max = b;
         }
-        if (number3.compareTo(max) > 0) {
-            max = number3;
+        if (c.compareTo(max) > 0) {
+            max=c;
         }
         return max;
     }
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter First Number : ");
-        int number1 = scanner.nextInt();
-        System.out.println("Enter Second Number : ");
-        int number2 = scanner.nextInt();
-        System.out.println("Enter Third Number : ");
-        int number3 = scanner.nextInt();
 
-        System.out.println("The Maximum Integer Is : " +maximumInteger(number1, number2, number3));
+    public static void main(String[] args) {
+        Integer resultInt =  maximumInteger(67, 76, 24);
+        System.out.println("The Maximum Integer Number Is : " +resultInt);
     }
 }
 

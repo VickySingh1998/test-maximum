@@ -3,35 +3,35 @@ package com.bridgelabz;
 //import java.util.Scanner;
 
 public class Maximum {
-    public static Integer maximumInteger(Integer number1, Integer number2, Integer number3) {
-        Integer max = number1;
-        if (number2.compareTo(max) > 0) {
-            max = number2;
+    public static Integer maximumInteger(Integer a, Integer b, Integer c) {
+        Integer max = a;
+        if (b.compareTo(max) > 0) {
+            max = b;
         }
-        if (number3.compareTo(max) > 0) {
-            max=number3;
-        }
-        return max;
-    }
-
-    public static Float maximumFloat(Float number1, Float number2, Float number3) {
-        Float max = number1;
-        if (number2.compareTo(max) > 0) {
-            max = number2;
-        }
-        if (number3.compareTo(max) > 0) {
-            max = number3;
+        if (c.compareTo(max) > 0) {
+            max=c;
         }
         return max;
     }
 
-    public static String maximumString(String string1, String string2, String string3) {
-        String max = string1;
-        if (string2.compareTo(max) > 0) {
-            max = string2;
+    public static Float maximumFloat(Float a, Float b, Float c) {
+        Float max = a;
+        if (b.compareTo(max) > 0) {
+            max = b;
         }
-        if (string3.compareTo(max) > 0) {
-            max = string3;
+        if (c.compareTo(max) > 0) {
+            max = c;
+        }
+        return max;
+    }
+
+    public static String maximumString(String a, String b, String c) {
+        String max = a;
+        if (b.compareTo(max) > 0) {
+            max = b;
+        }
+        if (c.compareTo(max) > 0) {
+            max = c;
         }
         return max;
     }
@@ -42,7 +42,7 @@ public class Maximum {
         String resultString = maximumString("Vicky", "Raja", "Deep");
         System.out.println("The Maximum Integer Number Is : " +resultInt);
         System.out.println("The Maximum Float Number Is : " +resultFloat);
-        System.out.println("The Maximum String Name Name Is : " +resultString);
+        System.out.println("The Maximum String Is : " +resultString);
     }
 }
 
